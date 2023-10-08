@@ -1,0 +1,15 @@
+/workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.csproj.AssemblyReference.cache
+/workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.AssemblyInfoInputs.cache
+/workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.AssemblyInfo.cs
+/workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.csproj.CoreCompileInputs.cache
+/workspaces/Tezxandventure/bin/Debug/net7.0/Tezxandventure
+/workspaces/Tezxandventure/bin/Debug/net7.0/Tezxandventure.deps.json
+/workspaces/Tezxandventure/bin/Debug/net7.0/Tezxandventure.runtimeconfig.json
+/workspaces/Tezxandventure/bin/Debug/net7.0/Tezxandventure.dll
+/workspaces/Tezxandventure/bin/Debug/net7.0/Tezxandventure.pdb
+/workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.dll
+/workspaces/Tezxandventure/obj/Debug/net7.0/refint/Tezxandventure.dll
+/workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.pdb
+/workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.genruntimeconfig.cache
+/workspaces/Tezxandventure/obj/Debug/net7.0/ref/Tezxandventure.dll
