@@ -12,7 +12,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.Clear();
 
             // Creating initial variables 
-            int age = 0, height = 0, bulk = 0, alignment = 0, cClass = 0;
+            int age = 0, height = 0, bulk = 0, alignment = 0, cClass = 0, cGold;
             float cStr = 0, cDex = 0, cWis = 0, cChar = 0;
             string name = "";
 
