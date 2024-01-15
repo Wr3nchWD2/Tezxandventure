@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
@@ -16,27 +16,30 @@ namespace MyApp // Note: actual namespace depends on the project name.
             float cStr = 0, cDex = 0, cWis = 0, cChar = 0;
             string name = "";
 
+            // Title Screen Animation
             ConsoleTitleThig();
+
+            Prologue.ConsoleScrollingTextThig_01();
 
             // Initiates the Character Verification and assing the variables with the newly inputed info (character height, age, name, bulk, alignment)
             Console.Clear();
             Tuple<string, int, float, float, float, float, int> charTupleValues_0 = CharacterManager(name, cClass, age, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cChar);
-            name = charTupleValues_0.Item1;alignment = charTupleValues_0.Item2;cStr = charTupleValues_0.Item3;cDex = charTupleValues_0.Item4;cWis = charTupleValues_0.Item5;cChar = charTupleValues_0.Item6;cClass = charTupleValues_0.Item7;
+            name = charTupleValues_0.Item1; alignment = charTupleValues_0.Item2; cStr = charTupleValues_0.Item3; cDex = charTupleValues_0.Item4; cWis = charTupleValues_0.Item5; cChar = charTupleValues_0.Item6; cClass = charTupleValues_0.Item7;
 
             // Initiates the Character Verification and assing the variables with the newly inputed info (character class)
-            Tuple<float, float, float, float> charTupleValues_1 = CharacterAdvancedStatCreater(cClass, ref cStr, ref cDex, ref cWis, ref cChar);
-            cStr = charTupleValues_0.Item3;cDex = charTupleValues_0.Item4;cWis = charTupleValues_0.Item5;cChar = charTupleValues_0.Item6;cClass = charTupleValues_0.Item7;
+            Tuple<float, float, float, float> charTupleValues_1 = CharacterAdvancedStatCreator(cClass, ref cStr, ref cDex, ref cWis, ref cChar);
+            cStr = charTupleValues_0.Item3; cDex = charTupleValues_0.Item4; cWis = charTupleValues_0.Item5; cChar = charTupleValues_0.Item6; cClass = charTupleValues_0.Item7;
         }
 
-        // Animations all from under here
+        // START SCREEN ANIMATION
         static void TitleCoolThig()
         {
             Console.WriteLine(""); Console.WriteLine("   ▄▄▄▄▀ ▄███▄       ▄   ▄▄▄▄▄▄       ██      ▄   ██▄       ▄   ▄███▄      ▄      ▄▄▄▄▀   ▄   █▄▄▄▄ ▄███▄   "); Console.WriteLine("▀▀▀ █    █▀   ▀  ▀▄   █ ▀   ▄▄▀       █ █      █  █  █       █  █▀   ▀      █  ▀▀▀ █       █  █  ▄▀ █▀   ▀  "); Console.WriteLine("    █    ██▄▄      █ ▀   ▄▀▀   ▄▀     █▄▄█ ██   █ █   █ █     █ ██▄▄    ██   █     █    █   █ █▀▀▌  ██▄▄    "); Console.WriteLine("   █     █▄   ▄▀  ▄ █    ▀▀▀▀▀▀       █  █ █ █  █ █  █   █    █ █▄   ▄▀ █ █  █    █     █   █ █  █  █▄   ▄▀ "); Console.WriteLine("  ▀      ▀███▀   █   ▀▄                  █ █  █ █ ███▀    █  █  ▀███▀   █  █ █   ▀      █▄ ▄█   █   ▀███▀   "); Console.WriteLine("                  ▀                     █  █   ██          █▐           █   ██           ▀▀▀   ▀            "); Console.WriteLine("                                       ▀                   ▐                                                "); Console.WriteLine("");
         }
         static void ConsoleTitleThig()
         {
-            int titleHeight = 9; // Adjust this value based on the actual height of your title
-            int animationSpeed = 375; // Adjust this value to control animation speed
+            int titleHeight = 9; // Adjust value based on the actual height of title
+            int animationSpeed = 200; // Adjust value to control animation speed
 
             int windowHeight = Console.WindowHeight;
             int initialTop = windowHeight - titleHeight;
@@ -50,14 +53,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 initialTop--;
             }
         }
-        static void DeamonAnimationRaceCreation_0()
-        {
-
-        }
-
-        // These sets of Char___Creaters ask the user for input
-        static string CharNameCreater(ref string name)
-
+        // These sets of CharCreaters ask the user for input
+        static string CharNameCreator(ref string name)
         {
             while (true)
             {
@@ -73,7 +70,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 }
             }
         }
-        static int CharClassCreater(ref int cClass)
+        static int CharClassCreator(ref int cClass)
         {
             while (true)
             {
@@ -89,8 +86,10 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         else if (cClass == 2) { Console.WriteLine("You are a explorer? \ny or n"); string ii = Console.ReadLine(); if (ii != "n" && ii != "y") { Console.WriteLine("INVALID ANSWER"); Console.ReadLine(); } else if (ii == "y") { return cClass; } }
                         else if (cClass == 3) { Console.WriteLine("You are a deprived? \ny or n"); string ii = Console.ReadLine(); if (ii != "n" && ii != "y") { Console.WriteLine("INVALID ANSWER"); Console.ReadLine(); } else if (ii == "y") { return cClass; } }
                         else if (cClass == 4) { Console.WriteLine("Really? \ny or n"); string ii = Console.ReadLine(); if (ii != "n" && ii != "y") { Console.WriteLine("INVALID ANSWER"); Console.ReadLine(); } else if (ii == "y") { return cClass; } }
-                        else if (cClass == 451131514) {//DeamonAnimationRaceCreation_0;
-                         return cClass; }
+                        else if (cClass == 451131514)
+                        {//DeamonAnimationRaceCreation_0;
+                            return cClass;
+                        }
                     }
                 }
                 else
@@ -99,8 +98,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 }
             }
         }
-        static int CharHeightCreater(ref int height)
-
+        static int CharHeightCreator(ref int height)
         {
             while (true)
             {
@@ -124,7 +122,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             }
         }
-        static int CharBulkCreater(ref int bulk)
+        static int CharBulkCreator(ref int bulk)
         {
             while (true)
             {
@@ -148,7 +146,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 }
             }
         }
-        static int CharAgeCreater(ref int age)
+        static int CharAgeCreator(ref int age)
         {
             while (true)
             {
@@ -182,7 +180,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             }
         }
-        static int CharAlignmentCreater(ref int alignment)
+        static int CharAlignmentCreator(ref int alignment)
         {
             while (true)
             {
@@ -211,12 +209,14 @@ namespace MyApp // Note: actual namespace depends on the project name.
         {
             while (true)
             {
-                CharNameCreater(ref name);
-                CharClassCreater(ref cClass);
-                CharAgeCreater(ref age);
-                CharHeightCreater(ref height);
-                CharBulkCreater(ref bulk);
-                CharAlignmentCreater(ref alignment);
+                CharNameCreator(ref name);
+                Prologue.ConsoleScrollingTextThig_02();
+                CharClassCreator(ref cClass);
+                CharAgeCreator(ref age);
+                Prologue.ConsoleScrollingTextThig_03();
+                CharHeightCreator(ref height);
+                CharBulkCreator(ref bulk);
+                CharAlignmentCreator(ref alignment);
 
                 Console.Clear();
                 Console.WriteLine("Name: " + name);
@@ -247,15 +247,15 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 if (i != "y" && i != "n") { Console.WriteLine("\n\n\nINVALID ANSWER\n"); }
                 else if (i == "y")
                 {
-                    CharacterBasicStatCreater(name, age, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterBasicStatCreator(name, age, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(name, alignment, cStr, cDex, cWis, cCharisma, cClass);
                 }
 
             }
         }
 
-        // Turns the age, height, etc. to str, dex, etc.
-        static Tuple<float, float, float, float> CharacterBasicStatCreater(string name, int age, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
+        // Turns the age, height, race, etc. to str, dex, wis, etc.
+        static Tuple<float, float, float, float> CharacterBasicStatCreator(string name, int age, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
         {
             float ctModStr = 0f, ctModDex = 0f, ctModWis = 0f, ctModChar = 0f;
 
@@ -2540,8 +2540,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
             }
             return Tuple.Create(cStr, cDex, cWis, cCharisma);
         }
-        // Turns the race to str, dex, etc.
-        static Tuple<float, float, float, float> CharacterAdvancedStatCreater(int cClass, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
+        // Turns the class to str, dex, etc.
+        static Tuple<float, float, float, float> CharacterAdvancedStatCreator(int cClass, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
         {
 
             if (cClass == 1)
