@@ -29,6 +29,8 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
             // Initiates the Character Verification and assing the variables with the newly inputed info (character class)
             Tuple<float, float, float, float> charTupleValues_1 = CharacterAdvancedStatCreator(cClass, ref cStr, ref cDex, ref cWis, ref cChar);
             cStr = charTupleValues_0.Item3; cDex = charTupleValues_0.Item4; cWis = charTupleValues_0.Item5; cChar = charTupleValues_0.Item6; cClass = charTupleValues_0.Item7;
+
+            CharacterEquipmentFinder(cClass, ref cStr, ref cDex, ref cWis, ref cChar);
         }
 
         // START SCREEN ANIMATION
@@ -207,16 +209,21 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
         // Completes and manages all steps of character creation
         static Tuple<string, int, float, float, float, float, int> CharacterManager(string name, int cClass, int age, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
         {
+            bool prologueDone = false;
             while (true)
             {
                 CharNameCreator(ref name);
-                Prologue.ConsoleScrollingTextThig_02();
+                if (prologueDone != true)
+                    Prologue.ConsoleScrollingTextThig_02();
                 CharClassCreator(ref cClass);
                 CharAgeCreator(ref age);
-                Prologue.ConsoleScrollingTextThig_03();
+                if (prologueDone != true)
+                    Prologue.ConsoleScrollingTextThig_03();
                 CharHeightCreator(ref height);
                 CharBulkCreator(ref bulk);
                 CharAlignmentCreator(ref alignment);
+
+                prologueDone = true;
 
                 Console.Clear();
                 Console.WriteLine("Name: " + name);
@@ -250,6 +257,10 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
                     CharacterBasicStatCreator(name, age, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(name, alignment, cStr, cDex, cWis, cCharisma, cClass);
                 }
+                else { }
+
+
+
 
             }
         }
@@ -1783,6 +1794,7 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
                 ctModChar += 6;
                 ctModStr += 2;
                 ctModDex += 1;
+                ctModWis -= 1;
                 if (bulk == 1)
                 {
                     ctModStr += 6;
@@ -2570,10 +2582,10 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
             }
             else if (cClass == 3)
             {
-                cStr *= 1.2f;
-                cDex *= 1.2f;
-                cWis *= 1.1f;
-                cCharisma *= 1.47f;
+                cStr *= 0.83f;
+                cDex *= 1.15f;
+                cWis *= 3.29f;
+                cCharisma *= 1.08f;
                 cStr = (int)Math.Round(cStr);
                 cDex = (int)Math.Round(cDex);
                 cWis = (int)Math.Round(cWis);
@@ -2582,10 +2594,10 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
             }
             else if (cClass == 4)
             {
-                cStr *= 0.83f;
-                cDex *= 1.15f;
-                cWis *= 3.29f;
-                cCharisma *= 1.08f;
+                cStr *= 0.9f;
+                cDex *= 0.9f;
+                cWis *= 0.9f;
+                cCharisma *= 1.99f;
                 cStr = (int)Math.Round(cStr);
                 cDex = (int)Math.Round(cDex);
                 cWis = (int)Math.Round(cWis);
@@ -2606,7 +2618,72 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
             }
             return Tuple.Create(cStr, cDex, cWis, cCharisma);
         }
+        static void CharacterEquipmentFinder(int cClass, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
+        {
+            int i = 1;
+
+            Inventory inventory = new Inventory();
+            AddInventoryAmmo ironArrow = new AddInventoryAmmo { Name = "Iron Arrows", Damage = 11, Quantity = 1};
+            AddInventoryAmmo woodArrow = new AddInventoryAmmo { Name = "Wooden Arrows", Damage = 6, Quantity = 1};
+            
+            AddInventoryItem estutsFlask = new AddInventoryItem { Name = "Estus Flask", Quantity = 1 };
+            AddInventoryWeapon battleAxe = new AddInventoryWeapon { Name = "Battle Axe", TwoHanded = false, BleedDamage = 0, Damage = 32, Quantity = 1 };
+            AddInventoryWeapon zwiehander = new AddInventoryWeapon { Name = "Zwiehander", TwoHanded = true, BleedDamage = 0, Damage = 67, Quantity = 1 };
+            AddInventoryWeapon shortBow = new AddInventoryWeapon { Name = "Short Bow", TwoHanded = true, BleedDamage = 0, Damage = 49, Quantity = 1 };
+            AddInventoryWeapon dagger = new AddInventoryWeapon { Name = "Dagger", TwoHanded = false, BleedDamage = 20, Damage = 16, Quantity = 1 };
+            AddInventoryWeapon woodClub = new AddInventoryWeapon { Name = "Wooden Club", TwoHanded = true, Damage = 41, Quantity = 1 };
+            AddInventoryWeapon reinforcedSpikedClub = new AddInventoryWeapon { Name = "Reinforced Spiked Club", TwoHanded = true, BleedDamage = 30, Damage = 78, Quantity = 1 };   
+            AddInventoryWeapon dragonsTooth = new AddInventoryWeapon { Name = "Dragon Tooth Club", TwoHanded = true, Damage = 182, Quantity = 1 };
+           
+
+            AddInventorySpell spell_00001 = new AddInventorySpell { Name = "Firebolt", Damage = 65, FPCost = 35, Quantity = 1 };
+            AddInventorySpell spell_00002 = new AddInventorySpell { Name = "Lightning", Damage = 96, FPCost = 47, Quantity = 1 };
+            if (cClass == 1)
+            {
+                if (cStr > 19.5)
+                {
+                    inventory.AddWeapon(zwiehander);
+                }
+                else
+                {
+                    inventory.AddWeapon(battleAxe);
+                }
+            }
+            else if (cClass == 2)
+            {
+                if (cDex > 16.5)
+                {
+                    inventory.AddWeapon(shortBow);
+                    while (i < 30)
+                        inventory.AddAmmo(ironArrow);
+                        i++;
+                    
+                }
+                else 
+                {
+                    inventory.AddWeapon(dagger);
+                }
+            }
+            else if (cClass == 3)
+            {
+                if (cWis > 6)
+                {
+                    inventory.AddSpell(spell_00001);
+                    
+                }
+                else 
+                {
+                    inventory.AddSpell(spell_00001);
+                }
+            }
+            else if (cClass == 4)
+            {
+                inventory.AddWeapon(woodClub);
+            }
+            inventory.DisplayInventory();
+        }
     }
+
 }
 
 
