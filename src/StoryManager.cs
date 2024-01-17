@@ -8,6 +8,7 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
 {
     internal class Prologue
     {
+        
         static void ScrollingTextSource_01()
         {
             int animationSpeed = 1250;
@@ -76,7 +77,32 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
             Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
             Console.ReadLine();
         }
-
+        static void ScrollingTextSource_04()
+        {
+            int animationSpeed = 1250;
+            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            Console.WriteLine("As you venture beyond the confines of the prison cell, the corridor unfolds into a dimly lit expanse.");
+            Thread.Sleep(animationSpeed);
+            Console.WriteLine("");
+            Console.WriteLine("A distant glow beckons, guiding your steps toward the flickering flames of the first bonfire.");
+            Thread.Sleep(animationSpeed);
+            Console.WriteLine("");
+            Console.WriteLine("The air is heavy with an unsettling stillness as you traverse the eerie surroundings. Suddenly, a colossal silhouette emerges- \nthe Stray Demon, a formidable guardian.");
+            Thread.Sleep(animationSpeed);
+            Console.WriteLine("");
+            Console.WriteLine("Choosing caution over confrontation, you press forward, ascending a weathered ladder. ");
+            Thread.Sleep(animationSpeed);
+            Console.WriteLine("");
+            Console.WriteLine("The ascent leads you to a small, open patch of grass bathed in feeble sunlight—the sanctuary of the first bonfire. ");
+            Thread.Sleep(animationSpeed);
+            Console.WriteLine("");
+            Console.WriteLine("The crackling flames provide a moment of respite, casting long shadows as you contemplate the challenges ahead in this \nforsaken realm.");
+            Thread.Sleep(animationSpeed);
+            Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
+            Console.WriteLine("press enter to continue...");
+            Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
+            Console.ReadLine();
+        }
         public static void ConsoleScrollingTextThig_01()
         {
             Console.CursorVisible = false;
@@ -126,8 +152,7 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
                 ScrollingTextSource_03();
                 initialTop--;
                 Thread.Sleep(50);  // Adjust this value for smoother animation
-            }
-
+            }           
             Console.CursorVisible = true;
             Console.Clear(); ;
         }
