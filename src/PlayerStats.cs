@@ -30,7 +30,8 @@ namespace TEZXANDVENTURE
             while (true)
             {
                 Console.Clear();
-                Console.Write("What is your name: ");
+                Console.WriteLine(" █     █░ ██▀███   ██▓▄▄▄█████▓▓█████    ▓██   ██▓ ▒█████   █    ██  ██▀███      ███▄    █  ▄▄▄      ███▄ ▄███▓▓█████ ");Console.WriteLine("▓█░ █ ░█░▓██ ▒ ██▒▓██▒▓  ██▒ ▓▒▓█   ▀     ▒██  ██▒▒██▒  ██▒ ██  ▓██▒▓██ ▒ ██▒    ██ ▀█   █ ▒████▄   ▓██▒▀█▀ ██▒▓█   ▀ ");Console.WriteLine("▒█░ █ ░█ ▓██ ░▄█ ▒▒██▒▒ ▓██░ ▒░▒███        ▒██ ██░▒██░  ██▒▓██  ▒██░▓██ ░▄█ ▒   ▓██  ▀█ ██▒▒██  ▀█▄ ▓██    ▓██░▒███   ");Console.WriteLine("░█░ █ ░█ ▒██▀▀█▄  ░██░░ ▓██▓ ░ ▒▓█  ▄      ░ ▐██▓░▒██   ██░▓▓█  ░██░▒██▀▀█▄     ▓██▒  ▐▌██▒░██▄▄▄▄██▒██    ▒██ ▒▓█  ▄ ");Console.WriteLine("░░██▒██▓ ░██▓ ▒██▒░██░  ▒██▒ ░ ░▒████▒     ░ ██▒▓░░ ████▓▒░▒▒█████▓ ░██▓ ▒██▒   ▒██░   ▓██░ ▓█   ▓██▒██▒   ░██▒░▒████▒");Console.WriteLine("░ ▓░▒ ▒  ░ ▒▓ ░▒▓░░▓    ▒ ░░   ░░ ▒░ ░      ██▒▒▒ ░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░   ░ ▒░   ▒ ▒  ▒▒   ▓▒█░ ▒░   ░  ░░░ ▒░ ░");Console.WriteLine("  ▒ ░ ░    ░▒ ░ ▒░ ▒ ░    ░     ░ ░  ░    ▓██ ░▒░   ░ ▒ ▒░ ░░▒░ ░ ░   ░▒ ░ ▒░   ░ ░░   ░ ▒░  ▒   ▒▒ ░  ░      ░ ░ ░  ░");Console.WriteLine("  ░   ░    ░░   ░  ▒ ░  ░         ░       ▒ ▒ ░░  ░ ░ ░ ▒   ░░░ ░ ░   ░░   ░       ░   ░ ░   ░   ▒  ░      ░      ░   ");
+                Console.Write("\n\n\nName: ");
                 name = Convert.ToString(Console.ReadLine());
                 Console.WriteLine("Your name is " + name + "? \ny or n");
                 string i = Convert.ToString(Console.ReadLine());
@@ -46,7 +47,11 @@ namespace TEZXANDVENTURE
             while (true)
             {
                 Console.Clear();
-                Console.Write("Enter Class. 1 = Warrior; 2 = Explorer; 3 = Cleric; 4 = Deprived");
+                Console.WriteLine("                         ▄████▄   ██░ ██  ▒█████   ▒█████    ██████ ▓█████     ▄▄▄          ▄████▄  ██▓    ▄▄▄        ██████   ██████ ");Console.WriteLine("                        ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒▒██▒  ██▒▒██    ▒ ▓█   ▀    ▒████▄       ▒██▀ ▀█ ▓██▒   ▒████▄    ▒██    ▒ ▒██    ▒ ");Console.WriteLine("                        ▒▓█    ▄ ▒██▀▀██░▒██░  ██▒▒██░  ██▒░ ▓██▄   ▒███      ▒██  ▀█▄     ▒▓█    ▄▒██░   ▒██  ▀█▄  ░ ▓██▄   ░ ▓██▄   ");Console.WriteLine("                        ▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░▒██   ██░  ▒   ██▒▒▓█  ▄    ░██▄▄▄▄██    ▒▓▓▄ ▄██▒██░   ░██▄▄▄▄██   ▒   ██▒  ▒   ██▒");Console.WriteLine("                        ▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░░ ████▓▒░▒██████▒▒░▒████▒    ▓█   ▓██▒   ▒ ▓███▀ ░██████▒▓█   ▓██▒▒██████▒▒▒██████▒▒");Console.WriteLine("                        ░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░ ░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░░░ ▒░ ░    ▒▒   ▓▒█░   ░ ░▒ ▒  ░ ▒░▓  ░▒▒   ▓▒█░▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░");Console.WriteLine("                         ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░   ░ ▒ ▒░ ░ ░▒  ░ ░ ░ ░  ░     ▒   ▒▒ ░     ░  ▒  ░ ░ ▒  ░ ▒   ▒▒ ░░ ░▒  ░ ░░ ░▒  ░ ░");
+                Console.WriteLine("\n1. Warrior");
+                Console.WriteLine("2. Explorer");
+                Console.WriteLine("3. Cleric");
+                Console.WriteLine("4. Deprived");
                 string i = Console.ReadLine();
                 if (int.TryParse(i, out cClass))
                 {
@@ -70,7 +75,7 @@ namespace TEZXANDVENTURE
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("                      ▄████▄   ██░ ██  ▒█████   ▒█████    ██████ ▓█████     ▄▄▄          ██▀███   ▄▄▄       ▄████▄  ▓█████ "); Console.WriteLine("                       ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒▒██▒  ██▒▒██    ▒ ▓█   ▀    ▒████▄       ▓██ ▒ ██▒▒████▄    ▒██▀ ▀█  ▓█   ▀ "); Console.WriteLine("                       ▒▓█    ▄ ▒██▀▀██░▒██░  ██▒▒██░  ██▒░ ▓██▄   ▒███      ▒██  ▀█▄     ▓██ ░▄█ ▒▒██  ▀█▄  ▒▓█    ▄ ▒███   "); Console.WriteLine("                       ▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░▒██   ██░  ▒   ██▒▒▓█  ▄    ░██▄▄▄▄██    ▒██▀▀█▄  ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▒▓█  ▄ "); Console.WriteLine("                       ▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░░ ████▓▒░▒██████▒▒░▒████▒    ▓█   ▓██▒   ░██▓ ▒██▒ ▓█   ▓██▒▒ ▓███▀ ░░▒████▒"); Console.WriteLine("                       ░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░ ░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░░░ ▒░ ░    ▒▒   ▓▒█░   ░ ▒▓ ░▒▓░ ▒▒   ▓▒█░░ ░▒ ▒  ░░░ ▒░ ░"); Console.WriteLine("                         ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░   ░ ▒ ▒░ ░ ░▒  ░ ░ ░ ░  ░     ▒   ▒▒ ░     ░▒ ░ ▒░  ▒   ▒▒ ░  ░  ▒    ░ ░  ░");
+                Console.WriteLine("                        ▄████▄   ██░ ██  ▒█████   ▒█████    ██████ ▓█████     ▄▄▄          ██▀███   ▄▄▄       ▄████▄  ▓█████ "); Console.WriteLine("                       ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒▒██▒  ██▒▒██    ▒ ▓█   ▀    ▒████▄       ▓██ ▒ ██▒▒████▄    ▒██▀ ▀█  ▓█   ▀ "); Console.WriteLine("                       ▒▓█    ▄ ▒██▀▀██░▒██░  ██▒▒██░  ██▒░ ▓██▄   ▒███      ▒██  ▀█▄     ▓██ ░▄█ ▒▒██  ▀█▄  ▒▓█    ▄ ▒███   "); Console.WriteLine("                       ▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░▒██   ██░  ▒   ██▒▒▓█  ▄    ░██▄▄▄▄██    ▒██▀▀█▄  ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▒▓█  ▄ "); Console.WriteLine("                       ▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░░ ████▓▒░▒██████▒▒░▒████▒    ▓█   ▓██▒   ░██▓ ▒██▒ ▓█   ▓██▒▒ ▓███▀ ░░▒████▒"); Console.WriteLine("                       ░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░ ░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░░░ ▒░ ░    ▒▒   ▓▒█░   ░ ▒▓ ░▒▓░ ▒▒   ▓▒█░░ ░▒ ▒  ░░░ ▒░ ░"); Console.WriteLine("                         ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░   ░ ▒ ▒░ ░ ░▒  ░ ░ ░ ░  ░     ▒   ▒▒ ░     ░▒ ░ ▒░  ▒   ▒▒ ░  ░  ▒    ░ ░  ░");
                 Console.WriteLine("");
                 Console.WriteLine("1. Orc");
                 Console.WriteLine("2. Elf");

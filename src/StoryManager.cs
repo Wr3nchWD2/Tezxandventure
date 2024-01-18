@@ -8,9 +8,10 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
 {
     internal class Prologue
     {
-        
+
         public static void PrologueText_01()
         {
+            Console.Clear();
             int animationSpeed = 1750;
             Console.WriteLine("As you awaken in the dimly lit prison cell, the air feels heavy, and the cold stone walls tell tales of forgotten histories.");
             Thread.Sleep(animationSpeed);
@@ -25,13 +26,14 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
             Thread.Sleep(animationSpeed);
             Console.WriteLine("");
             Console.WriteLine("Brace yourself, for the shadows hold answers for a daring soul.....");
-            Thread.Sleep(animationSpeed - 250); Console.WriteLine("");Thread.Sleep(animationSpeed - 250); Console.WriteLine("");Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); 
+            Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
             Console.WriteLine("press enter to continue...");
             Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
             Console.ReadLine();
         }
         public static void PrologueText_02()
         {
+            Console.Clear();
             int animationSpeed = 1750;
             Console.WriteLine("As you explore the desolate prison cell, a sudden disturbance catches your attention. A mysterious figure, unseen yet felt, \ndrops a lifeless body through the ceiling grates.");
             Thread.Sleep(animationSpeed);
@@ -40,13 +42,14 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
             Thread.Sleep(animationSpeed);
             Console.WriteLine("");
             Console.WriteLine("Stepping into the unknown, the cell door closes behind you, sealing the chapter of captivity. The shadows outside await your \narrival, and with each step, the enigma of your journey deepens.");
-            Thread.Sleep(animationSpeed - 250); Console.WriteLine("");Thread.Sleep(animationSpeed - 250); Console.WriteLine("");Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); 
+            Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
             Console.WriteLine("press enter to continue...");
             Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
             Console.ReadLine();
         }
         public static void PrologueText_03()
         {
+            Console.Clear();
             int animationSpeed = 1750;
             Console.WriteLine("As you venture beyond the confines of the prison cell, the corridor unfolds into a dimly lit expanse.");
             Thread.Sleep(animationSpeed);
@@ -65,7 +68,7 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
             Console.WriteLine("");
             Console.WriteLine("The crackling flames provide a moment of respite, casting long shadows as you contemplate the challenges ahead in this \nforsaken realm.");
             Thread.Sleep(animationSpeed);
-            Thread.Sleep(animationSpeed - 250); Console.WriteLine("");Thread.Sleep(animationSpeed - 250); Console.WriteLine("");Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
+            Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
             Console.WriteLine("press enter to continue...");
             Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
             Console.ReadLine();
