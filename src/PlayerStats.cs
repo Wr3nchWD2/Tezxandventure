@@ -70,7 +70,7 @@ namespace TEZXANDVENTURE
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("                      ▄████▄   ██░ ██  ▒█████   ▒█████    ██████ ▓█████     ▄▄▄          ██▀███   ▄▄▄       ▄████▄  ▓█████ "); Console.WriteLine("▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒▒██▒  ██▒▒██    ▒ ▓█   ▀    ▒████▄       ▓██ ▒ ██▒▒████▄    ▒██▀ ▀█  ▓█   ▀ "); Console.WriteLine("▒▓█    ▄ ▒██▀▀██░▒██░  ██▒▒██░  ██▒░ ▓██▄   ▒███      ▒██  ▀█▄     ▓██ ░▄█ ▒▒██  ▀█▄  ▒▓█    ▄ ▒███   "); Console.WriteLine("▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░▒██   ██░  ▒   ██▒▒▓█  ▄    ░██▄▄▄▄██    ▒██▀▀█▄  ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▒▓█  ▄ "); Console.WriteLine("▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░░ ████▓▒░▒██████▒▒░▒████▒    ▓█   ▓██▒   ░██▓ ▒██▒ ▓█   ▓██▒▒ ▓███▀ ░░▒████▒"); Console.WriteLine("░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░ ░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░░░ ▒░ ░    ▒▒   ▓▒█░   ░ ▒▓ ░▒▓░ ▒▒   ▓▒█░░ ░▒ ▒  ░░░ ▒░ ░"); Console.WriteLine("  ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░   ░ ▒ ▒░ ░ ░▒  ░ ░ ░ ░  ░     ▒   ▒▒ ░     ░▒ ░ ▒░  ▒   ▒▒ ░  ░  ▒    ░ ░  ░");
+                Console.WriteLine("                      ▄████▄   ██░ ██  ▒█████   ▒█████    ██████ ▓█████     ▄▄▄          ██▀███   ▄▄▄       ▄████▄  ▓█████ "); Console.WriteLine("                       ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒▒██▒  ██▒▒██    ▒ ▓█   ▀    ▒████▄       ▓██ ▒ ██▒▒████▄    ▒██▀ ▀█  ▓█   ▀ "); Console.WriteLine("                       ▒▓█    ▄ ▒██▀▀██░▒██░  ██▒▒██░  ██▒░ ▓██▄   ▒███      ▒██  ▀█▄     ▓██ ░▄█ ▒▒██  ▀█▄  ▒▓█    ▄ ▒███   "); Console.WriteLine("                       ▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░▒██   ██░  ▒   ██▒▒▓█  ▄    ░██▄▄▄▄██    ▒██▀▀█▄  ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▒▓█  ▄ "); Console.WriteLine("                       ▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░░ ████▓▒░▒██████▒▒░▒████▒    ▓█   ▓██▒   ░██▓ ▒██▒ ▓█   ▓██▒▒ ▓███▀ ░░▒████▒"); Console.WriteLine("                       ░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░ ░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░░░ ▒░ ░    ▒▒   ▓▒█░   ░ ▒▓ ░▒▓░ ▒▒   ▓▒█░░ ░▒ ▒  ░░░ ▒░ ░"); Console.WriteLine("                         ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░   ░ ▒ ▒░ ░ ░▒  ░ ░ ░ ░  ░     ▒   ▒▒ ░     ░▒ ░ ▒░  ▒   ▒▒ ░  ░  ▒    ░ ░  ░");
                 Console.WriteLine("");
                 Console.WriteLine("1. Orc");
                 Console.WriteLine("2. Elf");
@@ -85,7 +85,7 @@ namespace TEZXANDVENTURE
 
                 if (int.TryParse(i, out race))
                 {
-                    if (race > 3 || race < 1) { Console.WriteLine("\n\n\nINVALID RACE\n"); Console.ReadLine(); }
+                    if (race > 9 || race < 1) { Console.WriteLine("\n\n\nINVALID RACE\n"); Console.ReadLine(); }
                     else
                     {
                         if (race == 1) { Console.WriteLine("You are an Orc? \ny or n"); string ii = Console.ReadLine(); if (ii != "n" && ii != "y") { Console.WriteLine("INVALID ANSWER"); Console.ReadLine(); } else if (ii == "y") { return race; } }

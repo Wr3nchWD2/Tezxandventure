@@ -11,8 +11,11 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
         
         static void ScrollingTextSource_01()
         {
-            int animationSpeed = 1250;
-            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            int animationSpeed = 750;
+            int c = Console.height;
+            int i = 1;
+            while (i )
+            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             Console.WriteLine("As you awaken in the dimly lit prison cell, the air feels heavy, and the cold stone walls tell tales of forgotten histories.");
             Thread.Sleep(animationSpeed);
             Console.WriteLine("");
@@ -30,15 +33,13 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("Yours...");
-            Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine(""); Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
-            Console.WriteLine("press enter to continue...");
             Thread.Sleep(animationSpeed - 250); Console.WriteLine("");
             Console.ReadLine();
         }
         static void ScrollingTextSource_02()
         {
-            int animationSpeed = 1250;
-            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            int animationSpeed = 750;
+            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             Console.WriteLine("As you explore the desolate prison cell, a sudden disturbance catches your attention. A mysterious figure, unseen yet felt, \ndrops a lifeless body through the ceiling grates.");
             Thread.Sleep(animationSpeed);
             Console.WriteLine("");
@@ -53,8 +54,8 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
         }
         static void ScrollingTextSource_03()
         {
-            int animationSpeed = 1250;
-            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            int animationSpeed = 750;
+            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             Console.WriteLine("As you venture beyond the confines of the prison cell, the corridor unfolds into a dimly lit expanse.");
             Thread.Sleep(animationSpeed);
             Console.WriteLine("");
@@ -79,8 +80,8 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
         }
         static void ScrollingTextSource_04()
         {
-            int animationSpeed = 1250;
-            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            int animationSpeed = 750;
+            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             Console.WriteLine("As you venture beyond the confines of the prison cell, the corridor unfolds into a dimly lit expanse.");
             Thread.Sleep(animationSpeed);
             Console.WriteLine("");

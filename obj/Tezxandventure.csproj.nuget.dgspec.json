@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/Tezxandventure/Tezxandventure.csproj": {}
+    "C:\\Users\\danny\\OneDrive\\Documents\\GitHub\\Tezxandventure\\Tezxandventure.csproj": {}
   },
   "projects": {
-    "/workspaces/Tezxandventure/Tezxandventure.csproj": {
+    "C:\\Users\\danny\\OneDrive\\Documents\\GitHub\\Tezxandventure\\Tezxandventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/Tezxandventure/Tezxandventure.csproj",
+        "projectUniqueName": "C:\\Users\\danny\\OneDrive\\Documents\\GitHub\\Tezxandventure\\Tezxandventure.csproj",
         "projectName": "Tezxandventure",
-        "projectPath": "/workspaces/Tezxandventure/Tezxandventure.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/Tezxandventure/obj/",
+        "projectPath": "C:\\Users\\danny\\OneDrive\\Documents\\GitHub\\Tezxandventure\\Tezxandventure.csproj",
+        "packagesPath": "C:\\Users\\danny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danny\\OneDrive\\Documents\\GitHub\\Tezxandventure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

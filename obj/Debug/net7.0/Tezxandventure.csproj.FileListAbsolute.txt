@@ -13,3 +13,17 @@
 /workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.pdb
 /workspaces/Tezxandventure/obj/Debug/net7.0/Tezxandventure.genruntimeconfig.cache
 /workspaces/Tezxandventure/obj/Debug/net7.0/ref/Tezxandventure.dll
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\bin\Debug\net7.0\Tezxandventure.exe
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\bin\Debug\net7.0\Tezxandventure.deps.json
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\bin\Debug\net7.0\Tezxandventure.runtimeconfig.json
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\bin\Debug\net7.0\Tezxandventure.dll
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\bin\Debug\net7.0\Tezxandventure.pdb
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\obj\Debug\net7.0\Tezxandventure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\obj\Debug\net7.0\Tezxandventure.AssemblyInfoInputs.cache
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\obj\Debug\net7.0\Tezxandventure.AssemblyInfo.cs
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\obj\Debug\net7.0\Tezxandventure.csproj.CoreCompileInputs.cache
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\obj\Debug\net7.0\Tezxandventure.dll
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\obj\Debug\net7.0\refint\Tezxandventure.dll
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\obj\Debug\net7.0\Tezxandventure.pdb
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\obj\Debug\net7.0\Tezxandventure.genruntimeconfig.cache
+C:\Users\danny\OneDrive\Documents\GitHub\Tezxandventure\obj\Debug\net7.0\ref\Tezxandventure.dll
