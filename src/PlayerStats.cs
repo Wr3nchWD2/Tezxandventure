@@ -12975,23 +12975,15908 @@ namespace TEZXANDVENTURE
             }
             else if (race == 5)
             {
+                if (age > 16 && age <= 24)
+                {
+                    ctModStr += 12;
+                    ctModDex += 12;
+                    ctModWis -= 8;
+                    ctModChar -= 2;
 
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 24 && age <= 36)
+                {
+                    ctModStr += 13;
+                    ctModDex += 10;
+                    ctModWis -= 3;
+                
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 36 && age <= 42)
+                {
+                    ctModStr += 10;
+                    ctModDex += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 42 && age <= 52)
+                {
+                    ctModStr += 7;
+                    ctModDex += 5;
+                    ctModWis += 2;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 52 && age <= 68)
+                {
+                    ctModStr += 5;
+                    ctModDex += 4;
+                    ctModWis += 5;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 68 && age <= 76)
+                {
+                    ctModStr += 5;
+                    ctModDex += 3;
+                    ctModWis += 6;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 76 && age <= 88)
+                {
+                    ctModStr += 4;
+                    ctModDex += 3;
+                    ctModWis += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 88 && age <= 99)
+                {
+                    ctModStr += 3;
+                    ctModDex += 2;
+                    ctModWis += 11;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 99 && age <= 110)
+                {
+                    ctModStr += 2;
+                    ctModDex += 1;
+                    ctModWis += 13;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+            
             }
             else if (race == 6)
             {
+                if (age > 16 && age <= 24)
+                {
+                    ctModStr += 12;
+                    ctModDex += 12;
+                    ctModWis -= 8;
+                    ctModChar -= 2;
 
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 24 && age <= 36)
+                {
+                    ctModStr += 13;
+                    ctModDex += 10;
+                    ctModWis -= 3;
+                
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 36 && age <= 42)
+                {
+                    ctModStr += 10;
+                    ctModDex += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 42 && age <= 52)
+                {
+                    ctModStr += 7;
+                    ctModDex += 5;
+                    ctModWis += 2;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 52 && age <= 68)
+                {
+                    ctModStr += 5;
+                    ctModDex += 4;
+                    ctModWis += 5;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 68 && age <= 76)
+                {
+                    ctModStr += 5;
+                    ctModDex += 3;
+                    ctModWis += 6;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 76 && age <= 88)
+                {
+                    ctModStr += 4;
+                    ctModDex += 3;
+                    ctModWis += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 88 && age <= 99)
+                {
+                    ctModStr += 3;
+                    ctModDex += 2;
+                    ctModWis += 11;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 99 && age <= 110)
+                {
+                    ctModStr += 2;
+                    ctModDex += 1;
+                    ctModWis += 13;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+            
             }
             else if (race == 7)
             {
+                if (age > 16 && age <= 24)
+                {
+                    ctModStr += 12;
+                    ctModDex += 12;
+                    ctModWis -= 8;
+                    ctModChar -= 2;
 
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 24 && age <= 36)
+                {
+                    ctModStr += 13;
+                    ctModDex += 10;
+                    ctModWis -= 3;
+                
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 36 && age <= 42)
+                {
+                    ctModStr += 10;
+                    ctModDex += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 42 && age <= 52)
+                {
+                    ctModStr += 7;
+                    ctModDex += 5;
+                    ctModWis += 2;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 52 && age <= 68)
+                {
+                    ctModStr += 5;
+                    ctModDex += 4;
+                    ctModWis += 5;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 68 && age <= 76)
+                {
+                    ctModStr += 5;
+                    ctModDex += 3;
+                    ctModWis += 6;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 76 && age <= 88)
+                {
+                    ctModStr += 4;
+                    ctModDex += 3;
+                    ctModWis += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 88 && age <= 99)
+                {
+                    ctModStr += 3;
+                    ctModDex += 2;
+                    ctModWis += 11;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 99 && age <= 110)
+                {
+                    ctModStr += 2;
+                    ctModDex += 1;
+                    ctModWis += 13;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+            
             }
             else if (race == 8)
             {
+                if (age > 16 && age <= 24)
+                {
+                    ctModStr += 12;
+                    ctModDex += 12;
+                    ctModWis -= 8;
+                    ctModChar -= 2;
 
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 24 && age <= 36)
+                {
+                    ctModStr += 13;
+                    ctModDex += 10;
+                    ctModWis -= 3;
+                
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 36 && age <= 42)
+                {
+                    ctModStr += 10;
+                    ctModDex += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 42 && age <= 52)
+                {
+                    ctModStr += 7;
+                    ctModDex += 5;
+                    ctModWis += 2;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 52 && age <= 68)
+                {
+                    ctModStr += 5;
+                    ctModDex += 4;
+                    ctModWis += 5;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 68 && age <= 76)
+                {
+                    ctModStr += 5;
+                    ctModDex += 3;
+                    ctModWis += 6;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 76 && age <= 88)
+                {
+                    ctModStr += 4;
+                    ctModDex += 3;
+                    ctModWis += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 88 && age <= 99)
+                {
+                    ctModStr += 3;
+                    ctModDex += 2;
+                    ctModWis += 11;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 99 && age <= 110)
+                {
+                    ctModStr += 2;
+                    ctModDex += 1;
+                    ctModWis += 13;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+            
             }
             else if (race == 9)
             {
+                if (age > 16 && age <= 24)
+                {
+                    ctModStr += 12;
+                    ctModDex += 12;
+                    ctModWis -= 8;
+                    ctModChar -= 2;
 
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 24 && age <= 36)
+                {
+                    ctModStr += 13;
+                    ctModDex += 10;
+                    ctModWis -= 3;
+                
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 36 && age <= 42)
+                {
+                    ctModStr += 10;
+                    ctModDex += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 42 && age <= 52)
+                {
+                    ctModStr += 7;
+                    ctModDex += 5;
+                    ctModWis += 2;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 52 && age <= 68)
+                {
+                    ctModStr += 5;
+                    ctModDex += 4;
+                    ctModWis += 5;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 68 && age <= 76)
+                {
+                    ctModStr += 5;
+                    ctModDex += 3;
+                    ctModWis += 6;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 76 && age <= 88)
+                {
+                    ctModStr += 4;
+                    ctModDex += 3;
+                    ctModWis += 7;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 88 && age <= 99)
+                {
+                    ctModStr += 3;
+                    ctModDex += 2;
+                    ctModWis += 11;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+                else if (age > 99 && age <= 110)
+                {
+                    ctModStr += 2;
+                    ctModDex += 1;
+                    ctModWis += 13;
+                    
+                    if (bulk == 1)
+                    {
+                        ctModStr += 3;
+                        ctModDex += 1;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+
+                    }
+                    else if (bulk == 2)
+                    {
+                        ctModStr += 6;
+
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                    else if (bulk ==3)
+                    {
+                        ctModStr += 8;
+                        ctModDex -= 1;
+                        
+                        if (height == 1)
+                        {
+                            ctModDex += 8;
+                            ctModStr -= 1;
+                            inventory.AddPerk(sshort);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 2)
+                        {
+                            ctModDex += 6;
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                        else if (height == 3)
+                        {
+                            ctModDex += 3;
+                            ctModStr += 1;
+                            inventory.AddPerk(tall);
+
+                            if (alignment == 1)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr -= 4;
+                                ctModWis += 7;
+                                ctModChar += 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 2)
+                            {
+                                ctModChar += 2;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                            if (alignment == 3)
+                            {
+                                inventory.AddPerk(passive);
+                                ctModStr += 4;
+                                ctModWis -= 7;
+                                ctModChar -= 4;
+                                cStr = (int)Math.Round(ctModStr);
+                                cDex = (int)Math.Round(ctModDex);
+                                cWis = (int)Math.Round(ctModWis);
+                                cCharisma = (int)Math.Round(ctModChar);
+                            }
+                        }
+                    }
+                
+                }
+            
             }
 
             return Tuple.Create(cStr, cDex, cWis, cCharisma);
