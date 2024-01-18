@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Drawing;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 
@@ -8,8 +9,9 @@ namespace TEZXANDVENTURE // Note: actual namespace depends on the project name.
     internal class Program
     {
         public static void Main(string[] args)
-        {    
+        {               
             // Title Screen Animation
+            Console.BufferHeight = 91;
             ConsoleTitleThig();
             Console.Clear();
 

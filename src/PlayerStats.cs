@@ -11,7 +11,7 @@ namespace TEZXANDVENTURE
             float cStr = 0, cDex = 0, cWis = 0, cChar = 0;
             string name = "";
 
-            Prologue.ConsoleScrollingTextThig_01();
+            Prologue.PrologueText_01();
 
             // Initiates the Character Verification and assing the variables with the newly inputed info (character height, age, name, bulk, alignment)
             Tuple<float, float, float, float, int> charTupleValues_0 = CharacterManager(name, cClass, age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cChar);
@@ -172,13 +172,13 @@ namespace TEZXANDVENTURE
             {
                 CharNameCreator(ref name);
                 if (prologueDone != true)
-                    Prologue.ConsoleScrollingTextThig_02();
+                    Prologue.PrologueText_02();
                 CharClassCreator(ref cClass);
                 CharAgeCreator(ref age);
                 CharRaceCreator(ref height);
                 CharAlignmentCreator(ref alignment);
                 if (prologueDone != true)
-                    Prologue.ConsoleScrollingTextThig_03();
+                    Prologue.PrologueText_03();
 
                 prologueDone = true;
 
@@ -28880,7 +28880,7 @@ namespace TEZXANDVENTURE
             }
 
             return Tuple.Create(cStr, cDex, cWis, cCharisma);
-        }
+        }       
         // Turns the class to str, dex, etc.
         static Tuple<float, float, float, float> CharacterAdvancedStatCreator(int cClass, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
         {

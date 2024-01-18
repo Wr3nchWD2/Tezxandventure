@@ -4,13 +4,13 @@ namespace TEZXANDVENTURE
 {
     public class AddInventoryItem
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public int Quantity { get; set; }
     }
 
     public class AddInventoryWeapon
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public bool TwoHanded { get; set; }
         public int BleedDamage { get; set; }
         public int Damage { get; set; }
@@ -19,7 +19,7 @@ namespace TEZXANDVENTURE
 
     public class AddInventorySpell
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public int Damage { get; set; }
         public int FPCost { get; set; }
         public int Quantity { get; set; }
@@ -27,13 +27,13 @@ namespace TEZXANDVENTURE
 
     public class AddInventoryAmmo
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public int Damage { get; set; }
         public int Quantity { get; set; }
     }
     public class AddCharPerk
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
     public class Inventory
     {
