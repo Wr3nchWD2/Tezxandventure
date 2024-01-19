@@ -19,7 +19,7 @@ namespace TEZXANDVENTURE
 
             // Initiates the Character Verification and assing the variables with the newly inputed info (character class)
             Tuple<float, float, float, float> charTupleValues_1 = CharacterAdvancedStatCreator(cClass, ref cStr, ref cDex, ref cWis, ref cChar);
-            cStr = charTupleValues_0.Item1; cDex = charTupleValues_0.Item2; cWis = charTupleValues_0.Item3; cChar = charTupleValues_0.Item4; cClass = charTupleValues_0.Item5;
+            cStr = charTupleValues_1.Item1; cDex = charTupleValues_1.Item2; cWis = charTupleValues_1.Item3; cChar = charTupleValues_1.Item4;
 
             CharacterEquipmentFinder(cClass, ref cStr, ref cDex, ref cWis, ref cChar);
         }
@@ -231,7 +231,7 @@ namespace TEZXANDVENTURE
             }
         }
         // Turns the age, height, race, etc. to str, dex, wis, etc.
-        static Tuple<float, float, float, float> CharacterRaceStatCreator(string name, int age, int race, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
+        static Tuple<float, float, float, float> CharacterRaceStatCreator(string name, int age, int race, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma) 
         {
             Inventory inventory = new Inventory();
 
@@ -248,22 +248,21 @@ namespace TEZXANDVENTURE
                 height = 2;
                 bulk = 3;
                 cCharisma -= 5;
-
+                CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             else if (race == 2)
             {
                 height = 2;
                 bulk = 1;
                 cWis += 3;
-
-
+                CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             else if (race == 3)
             {
                 height = 2;
                 bulk = 2;
                 cCharisma += 1;
-
+                CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             else if (race == 4)
             {
@@ -271,6 +270,7 @@ namespace TEZXANDVENTURE
                 bulk = 1;
                 cCharisma += 1;
                 inventory.AddPerk(halflingLuck);
+                CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             // Max Dex Path { Age1\Bulk1\Height1\AnyAlingment } = 16 dex
             else if (race == 5)
@@ -278,6 +278,7 @@ namespace TEZXANDVENTURE
                 height = 1;
                 bulk = 2;
                 cDex += 2;
+                CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             // Min Dex Path { Age9\Bulk3\Height3\AnyAlingment } = 2 dex
             // Max Str Path { Age1\Bulk3\Height3\Alingment3 } = 13 str
@@ -288,6 +289,7 @@ namespace TEZXANDVENTURE
                 bulk = 3;
                 cStr += 2;
                 cDex -= 1;
+                CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             else if (race == 7)
             {
@@ -295,15 +297,14 @@ namespace TEZXANDVENTURE
                 bulk = 1;
                 cWis += 2;
                 inventory.AddPerk(firbolgWisdom);
-
-
+                CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             else if (race == 8)
             {
                 height = 1;
                 bulk = 3;
                 inventory.AddPerk(dwarvenArmorProficiency);
-
+                CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             else if (race == 9)
             {
@@ -312,12 +313,12 @@ namespace TEZXANDVENTURE
                 bulk = 2;
                 cWis += 1;
                 inventory.AddPerk(dragonbornBreath);
-
+                CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
 
             return Tuple.Create(cStr, cDex, cWis, cCharisma);
         }
-        static Tuple<float, float, float, float> CharacterAgeStatCreator(int age, int race, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
+        static Tuple<float, float, float, float> CharacterAgeStatCreator(int height, int bulk, int alignment, int age, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
         {
             if (age > 16 && age <= 24)
             {
@@ -325,6 +326,7 @@ namespace TEZXANDVENTURE
                 cDex += 12;
                 cWis -= 8;
 
+                CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
             else if (age > 24 && age <= 36)
@@ -333,6 +335,7 @@ namespace TEZXANDVENTURE
                 cDex += 10;
                 cWis -= 3;
 
+                CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
             else if (age > 36 && age <= 42)
@@ -340,6 +343,7 @@ namespace TEZXANDVENTURE
                 cStr += 10;
                 cDex += 7;
 
+                CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
             else if (age > 42 && age <= 52)
@@ -348,6 +352,7 @@ namespace TEZXANDVENTURE
                 cDex += 5;
                 cWis += 2;
 
+                CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
             else if (age > 52 && age <= 68)
@@ -356,6 +361,7 @@ namespace TEZXANDVENTURE
                 cDex += 4;
                 cWis += 5;
 
+                CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
             else if (age > 68 && age <= 76)
@@ -364,6 +370,7 @@ namespace TEZXANDVENTURE
                 cDex += 3;
                 cWis += 6;
 
+                CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
             else if (age > 76 && age <= 88)
@@ -372,6 +379,7 @@ namespace TEZXANDVENTURE
                 cDex += 3;
                 cWis += 7;
 
+                CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
             else if (age > 88 && age <= 99)
@@ -379,7 +387,8 @@ namespace TEZXANDVENTURE
                 cStr += 3;
                 cDex += 2;
                 cWis += 11;
-
+                
+                CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
             else if (age > 99 && age <= 110)
@@ -388,13 +397,14 @@ namespace TEZXANDVENTURE
                 cDex += 1;
                 cWis += 13;
 
+                CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
 
             return Tuple.Create(cStr, cDex, cWis, cCharisma);
         }
 
-        static Tuple<float, float, float, float> CharacterBulkHeightStatCreator(int age, int race, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
+        static Tuple<float, float, float, float> CharacterBulkHeightStatCreator(int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
         {
             Inventory inventory = new Inventory();
 
@@ -411,14 +421,14 @@ namespace TEZXANDVENTURE
                     cStr -= 1;
                     inventory.AddPerk(sshort);
 
-                    CharacterAlingmentStatCreator(age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterAlingmentStatCreator(alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma);
                 }
                 else if (height == 2)
                 {
                     cDex += 6;
 
-                    CharacterAlingmentStatCreator(age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterAlingmentStatCreator(alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma);
                 }
                 else if (height == 3)
@@ -427,7 +437,7 @@ namespace TEZXANDVENTURE
                     cStr += 1;
                     inventory.AddPerk(tall);
 
-                    CharacterAlingmentStatCreator(age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterAlingmentStatCreator(alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma);
                 }
 
@@ -442,14 +452,14 @@ namespace TEZXANDVENTURE
                     cStr -= 1;
                     inventory.AddPerk(sshort);
 
-                    CharacterAlingmentStatCreator(age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterAlingmentStatCreator(alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma);
                 }
                 else if (height == 2)
                 {
                     cDex += 6;
 
-                    CharacterAlingmentStatCreator(age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterAlingmentStatCreator(alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma);
                 }
                 else if (height == 3)
@@ -458,7 +468,7 @@ namespace TEZXANDVENTURE
                     cStr += 1;
                     inventory.AddPerk(tall);
 
-                    CharacterAlingmentStatCreator(age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterAlingmentStatCreator(alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma);
                 }
             }
@@ -473,14 +483,14 @@ namespace TEZXANDVENTURE
                     cStr -= 1;
                     inventory.AddPerk(sshort);
 
-                    CharacterAlingmentStatCreator(age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterAlingmentStatCreator(alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma);
                 }
                 else if (height == 2)
                 {
                     cDex += 6;
 
-                    CharacterAlingmentStatCreator(age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterAlingmentStatCreator(alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma);
                 }
                 else if (height == 3)
@@ -489,14 +499,14 @@ namespace TEZXANDVENTURE
                     cStr += 1;
                     inventory.AddPerk(tall);
 
-                    CharacterAlingmentStatCreator(age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterAlingmentStatCreator(alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma);
                 }
             }
 
             return Tuple.Create(cStr, cDex, cWis, cCharisma);
         }
-        static Tuple<float, float, float, float> CharacterAlingmentStatCreator(int age, int race, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
+        static Tuple<float, float, float, float> CharacterAlingmentStatCreator(int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
         {
             Inventory inventory = new Inventory();
 
