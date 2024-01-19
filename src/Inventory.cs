@@ -7,16 +7,15 @@ namespace TEZXANDVENTURE
         public string? Name { get; set; }
         public int Quantity { get; set; }
     }
-
     public class AddInventoryWeapon
     {
         public string? Name { get; set; }
         public bool TwoHanded { get; set; }
         public int BleedDamage { get; set; }
+        public int enduranceCost { get; set; }
         public int Damage { get; set; }
         public int Quantity { get; set; }
     }
-
     public class AddInventorySpell
     {
         public string? Name { get; set; }
@@ -24,7 +23,6 @@ namespace TEZXANDVENTURE
         public int FPCost { get; set; }
         public int Quantity { get; set; }
     }
-
     public class AddInventoryAmmo
     {
         public string? Name { get; set; }
@@ -171,5 +169,54 @@ namespace TEZXANDVENTURE
 
             Console.ReadLine();
         }
+    }
+    public class EnemyInventory
+    {
+        private List<AddInventoryItem> items;
+        private List<AddInventoryWeapon> weapons;
+        private List<AddInventorySpell> spells;
+        private List<AddInventoryAmmo> ammos;
+        public EnemyInventory()
+        {
+            items = new List<AddInventoryItem>();
+            weapons = new List<AddInventoryWeapon>();
+            spells = new List<AddInventorySpell>();
+            ammos = new List<AddInventoryAmmo>();
+        }
+
+        public void AddItem(AddInventoryItem item)
+        {
+            items.Add(item);
+        }
+        public void AddWeapon(AddInventoryWeapon weapon)
+        {
+            weapons.Add(weapon);
+        }
+        public void AddSpell(AddInventorySpell spell)
+        {
+            spells.Add(spell);
+        }
+        public void AddAmmo(AddInventoryAmmo ammo)
+        {
+            ammos.Add(ammo);
+        }
+
+        public void RemoveItem(AddInventoryItem item)
+        {
+            items.Remove(item);
+        }
+        public void RemoveWeapon(AddInventoryWeapon weapon)
+        {
+            weapons.Remove(weapon);
+        }
+        public void RemoveSpell(AddInventorySpell spell)
+        {
+            spells.Remove(spell);
+        }
+        public void RemoveAmmo(AddInventoryAmmo ammo)
+        {
+            ammos.Remove(ammo);
+        }
+      
     }
 }

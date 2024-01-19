@@ -1,20 +1,23 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace TEZXANDVENTURE
 {
     class PlayerStats
     {
+        public static int age = 0, race = 0, height = 0, bulk = 0, alignment = 0, cClass = 0, cGold = 0;
+        public static int vigur = 0, endurance = 0, focusPoints = 0, enduranceRegen = 0, focusPointsRegen = 0;
+        public static float cStr = 0, cDex = 0, cWis = 0, cChar = 0;
+        public static string name = "";
         public static void manager()
         {
             // Creating initial variables 
-            int age = 0, race = 0, height = 0, bulk = 0, alignment = 0, cClass = 0, cGold = 0;
-            float cStr = 0, cDex = 0, cWis = 0, cChar = 0;
-            string name = "";
+            
 
             Prologue.PrologueText_01();
 
             // Initiates the Character Verification and assing the variables with the newly inputed info (character height, age, name, bulk, alignment)
-            Tuple<float, float, float, float, int> charTupleValues_0 = CharacterManager(name, cClass, age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cChar);
+            Tuple<float, float, float, float, int> charTupleValues_0 = CharacterManager(name, cClass, age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cChar, ref vigur, ref endurance, ref focusPoints, ref enduranceRegen, ref focusPointsRegen);
             cStr = charTupleValues_0.Item1; cDex = charTupleValues_0.Item2; cWis = charTupleValues_0.Item3; cChar = charTupleValues_0.Item4; cClass = charTupleValues_0.Item5;
 
             // Initiates the Character Verification and assing the variables with the newly inputed info (character class)
@@ -174,7 +177,7 @@ namespace TEZXANDVENTURE
         }
 
         // Completes and manages all steps of character creation
-        static Tuple<float, float, float, float, int> CharacterManager(string name, int cClass, int age, int race, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
+        static Tuple<float, float, float, float, int> CharacterManager(string name, int cClass, int age, int race, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma, ref int vigur, ref int endurance, ref int focusPoints,  ref int enduranceRegen, ref int focusPointsRegen)
         {
             bool prologueDone = false;
             while (true)
@@ -220,7 +223,7 @@ namespace TEZXANDVENTURE
                 if (i != "y" && i != "n") { Console.WriteLine("\n\n\nINVALID ANSWER\n"); }
                 else if (i == "y")
                 {
-                    CharacterRaceStatCreator(name, age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
+                    CharacterRaceStatCreator(name, age, race, height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma, ref vigur, ref endurance, ref focusPoints, ref enduranceRegen, ref focusPointsRegen);
                     return Tuple.Create(cStr, cDex, cWis, cCharisma, cClass);
                 }
                 else { }
@@ -231,7 +234,8 @@ namespace TEZXANDVENTURE
             }
         }
         // Turns the age, height, race, etc. to str, dex, wis, etc.
-        static Tuple<float, float, float, float> CharacterRaceStatCreator(string name, int age, int race, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma) 
+
+        static Tuple<float, float, float, float> CharacterRaceStatCreator(string name, int age, int race, int height, int bulk, int alignment, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma, ref int vigur, ref int endurance, ref int focusPoints, ref int enduranceRegen, ref int focusPointsRegen)
         {
             Inventory inventory = new Inventory();
 
@@ -248,13 +252,15 @@ namespace TEZXANDVENTURE
                 height = 2;
                 bulk = 3;
                 cCharisma -= 5;
+                vigur = 335; endurance = 126; focusPoints = 47; enduranceRegen = 25; focusPointsRegen = 25;
                 CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             else if (race == 2)
             {
                 height = 2;
                 bulk = 1;
-                cWis += 3;
+                cWis += 1;
+                vigur = 263; endurance = 79; focusPoints = 139; enduranceRegen = 16; focusPointsRegen = 69;
                 CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             else if (race == 3)
@@ -262,6 +268,7 @@ namespace TEZXANDVENTURE
                 height = 2;
                 bulk = 2;
                 cCharisma += 1;
+                vigur = 245; endurance = 100; focusPoints = 100; enduranceRegen = 20; focusPointsRegen = 50;
                 CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             else if (race == 4)
@@ -270,18 +277,21 @@ namespace TEZXANDVENTURE
                 bulk = 1;
                 cCharisma += 1;
                 inventory.AddPerk(halflingLuck);
+                vigur = 127; endurance = 68; focusPoints = 120; enduranceRegen = 27; focusPointsRegen = 60;
                 CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
-            // Max Dex Path { Age1\Bulk1\Height1\AnyAlingment } = 16 dex
+            // Max Dex Path { Age1\Bulk1\Height1\AnyAlingment } = 16nc/32wc dex
             else if (race == 5)
             {
                 height = 1;
                 bulk = 2;
                 cDex += 2;
+                vigur = 163; endurance = 76; focusPoints = 75; enduranceRegen = 25; focusPointsRegen = 40;
                 CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
             // Min Dex Path { Age9\Bulk3\Height3\AnyAlingment } = 2 dex
-            // Max Str Path { Age1\Bulk3\Height3\Alingment3 } = 13 str
+            // Max Str Path { Age1\Bulk3\Height3\Alingment3 } = 13nc/23wc str
+            // Min Wis Path { Age1\AnyBulk\AnyHeight\Allingment3 } = -15 Wis
             else if (race == 6)
             {
                 inventory.AddPerk(goliathToughness);
@@ -289,13 +299,19 @@ namespace TEZXANDVENTURE
                 bulk = 3;
                 cStr += 2;
                 cDex -= 1;
+                cWis -= 1;
+                vigur = 418; endurance = 135; focusPoints = 21; enduranceRegen = 27; focusPointsRegen = 10;
                 CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
+            // Min Str Path { Age9\AnyBulk\AnyHeight\Alingment1 } = 4 Str
+            // Max Wis Path { Age9\AnyBulk\AnyHeight\Alingment1 } = 23 Wis
             else if (race == 7)
             {
                 height = 3;
                 bulk = 1;
-                cWis += 2;
+                cWis += 3;
+                cStr -= 1;
+                vigur = 216; endurance = 27; focusPoints = 160; enduranceRegen = 10; focusPointsRegen = 80;
                 inventory.AddPerk(firbolgWisdom);
                 CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
@@ -303,6 +319,7 @@ namespace TEZXANDVENTURE
             {
                 height = 1;
                 bulk = 3;
+                vigur = 315; endurance = 116; focusPoints = 58; enduranceRegen = 22; focusPointsRegen = 29;
                 inventory.AddPerk(dwarvenArmorProficiency);
                 CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
@@ -312,6 +329,7 @@ namespace TEZXANDVENTURE
                 height = 3;
                 bulk = 2;
                 cWis += 1;
+                vigur = 230; endurance = 67; focusPoints = 130; enduranceRegen = 30; focusPointsRegen = 65;
                 inventory.AddPerk(dragonbornBreath);
                 CharacterAgeStatCreator(height, bulk, alignment, age, ref cStr, ref cDex, ref cWis, ref cCharisma);
             }
@@ -387,7 +405,7 @@ namespace TEZXANDVENTURE
                 cStr += 3;
                 cDex += 2;
                 cWis += 11;
-                
+
                 CharacterBulkHeightStatCreator(height, bulk, alignment, ref cStr, ref cDex, ref cWis, ref cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
@@ -445,7 +463,7 @@ namespace TEZXANDVENTURE
             else if (bulk == 2)
             {
                 cStr += 6;
-                
+
                 if (height == 1)
                 {
                     cDex += 8;
@@ -568,7 +586,7 @@ namespace TEZXANDVENTURE
             else if (cClass == 2)
             {
                 cStr *= 0.47f;
-                cDex *= 1.49f;
+                cDex *= 1.99f;
                 cWis *= 1.27f;
                 cCharisma *= 1.18f;
                 cStr = (int)Math.Round(cStr);
@@ -601,18 +619,6 @@ namespace TEZXANDVENTURE
                 cCharisma = (int)Math.Round(cCharisma);
                 return Tuple.Create(cStr, cDex, cWis, cCharisma);
             }
-            else if (cClass == 41131514)
-            {
-                cStr *= 2.35f;
-                cDex *= 1.89f;
-                cWis = (-cWis) * 1.6f;
-                cCharisma *= 0.07f;
-                cStr = (int)Math.Round(cStr);
-                cDex = (int)Math.Round(cDex);
-                cWis = (int)Math.Round(cWis);
-                cCharisma = (int)Math.Round(cCharisma);
-                return Tuple.Create(cStr, cDex, cWis, cCharisma);
-            }
             return Tuple.Create(cStr, cDex, cWis, cCharisma);
         }
         static void CharacterEquipmentFinder(int cClass, ref float cStr, ref float cDex, ref float cWis, ref float cCharisma)
@@ -624,31 +630,33 @@ namespace TEZXANDVENTURE
             AddInventoryAmmo woodArrow = new AddInventoryAmmo { Name = "Wooden Arrows", Damage = 6, Quantity = 1 };
 
             AddInventoryItem estutsFlask = new AddInventoryItem { Name = "Estus Flask", Quantity = 1 };
-            AddInventoryWeapon battleAxe = new AddInventoryWeapon { Name = "Battle Axe", TwoHanded = false, BleedDamage = 0, Damage = 32, Quantity = 1 };
-            AddInventoryWeapon zwiehander = new AddInventoryWeapon { Name = "Zwiehander", TwoHanded = true, BleedDamage = 0, Damage = 67, Quantity = 1 };
-            AddInventoryWeapon shortBow = new AddInventoryWeapon { Name = "Short Bow", TwoHanded = true, BleedDamage = 0, Damage = 49, Quantity = 1 };
-            AddInventoryWeapon dagger = new AddInventoryWeapon { Name = "Dagger", TwoHanded = false, BleedDamage = 20, Damage = 16, Quantity = 1 };
-            AddInventoryWeapon woodClub = new AddInventoryWeapon { Name = "Wooden Club", TwoHanded = true, Damage = 41, Quantity = 1 };
-            AddInventoryWeapon reinforcedSpikedClub = new AddInventoryWeapon { Name = "Reinforced Spiked Club", TwoHanded = true, BleedDamage = 30, Damage = 78, Quantity = 1 };
-            AddInventoryWeapon dragonsTooth = new AddInventoryWeapon { Name = "Dragon Tooth Club", TwoHanded = true, Damage = 182, Quantity = 1 };
+
+            AddInventoryWeapon warAxe = new AddInventoryWeapon { Name = "War Axe", TwoHanded = false, BleedDamage = 0, enduranceCost = 23,  Damage = 32, Quantity = 1 };
+            AddInventoryWeapon zwiehander = new AddInventoryWeapon { Name = "Zwiehander", TwoHanded = true, BleedDamage = 0 , enduranceCost = 37, Damage = 67, Quantity = 1 };
+            AddInventoryWeapon shortBow = new AddInventoryWeapon { Name = "Short Bow", TwoHanded = true, BleedDamage = 0, enduranceCost = 20, Damage = 49, Quantity = 1 };
+            AddInventoryWeapon dagger = new AddInventoryWeapon { Name = "Dagger", TwoHanded = false, BleedDamage = 15, enduranceCost = 12, Damage = 16, Quantity = 1 };
+            AddInventoryWeapon serratedDagger = new AddInventoryWeapon { Name = "Serrated Dagger", TwoHanded = false, BleedDamage = 60, enduranceCost = 19, Damage = 24, Quantity = 1 };
+            AddInventoryWeapon woodClub = new AddInventoryWeapon { Name = "Wooden Club", TwoHanded = true, BleedDamage = 0, enduranceCost = 29, Damage = 41, Quantity = 1 };
+            AddInventoryWeapon reinforcedSpikedClub = new AddInventoryWeapon { Name = "Reinforced Spiked Club", TwoHanded = true, BleedDamage = 30, enduranceCost = 83, Damage = 78, Quantity = 1 };
+            AddInventoryWeapon dragonsTooth = new AddInventoryWeapon { Name = "Dragon Tooth Club", TwoHanded = true, BleedDamage = 0, enduranceCost = 112, Damage = 182, Quantity = 1 };
 
 
             AddInventorySpell spell_00001 = new AddInventorySpell { Name = "Firebolt", Damage = 65, FPCost = 35, Quantity = 1 };
             AddInventorySpell spell_00002 = new AddInventorySpell { Name = "Lightning", Damage = 96, FPCost = 47, Quantity = 1 };
             if (cClass == 1)
             {
-                if (cStr > 19.5)
+                if (cStr > 14.5)
                 {
                     inventory.AddWeapon(zwiehander);
                 }
                 else
                 {
-                    inventory.AddWeapon(battleAxe);
+                    inventory.AddWeapon(warAxe);
                 }
             }
             else if (cClass == 2)
             {
-                if (cDex > 16.5)
+                if (cDex > 17.5)
                 {
                     inventory.AddWeapon(shortBow);
                     while (i < 30)
@@ -665,7 +673,7 @@ namespace TEZXANDVENTURE
             {
                 if (cWis > 6)
                 {
-                    inventory.AddSpell(spell_00001);
+                    inventory.AddSpell(spell_00002);
 
                 }
                 else
